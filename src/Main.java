@@ -77,19 +77,22 @@ public class Main {
     public static void averageSalary() {
         double averSalary = 0;
         double salaryTotal = 0;
+        int counter = 0;
         for (int i = 0; i < workers.length; i++) {
             salaryTotal += workers[i].getSalary();
-            averSalary = salaryTotal / workers.length;
+            counter++;
+            averSalary = salaryTotal / counter ;
         }
         System.out.println(averSalary + " рублей.");
     }
+
     public static void fio() {
-        for (int i = 0; i < workers.length; i++ ) {
+        for (int i = 0; i < workers.length; i++) {
 
             System.out.println(workers[i].getSurname() + " " + workers[i].getName() + " " + workers[i].getPatronymic());
         }
-        }
     }
+}
 
 
 
